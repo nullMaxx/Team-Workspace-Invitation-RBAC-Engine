@@ -15,7 +15,7 @@ class InvitationStatus(str, enum.Enum):
     EXPIRED = "EXPIRED"
     REVOKED = "REVOKED"
 
-class Invtiation(Base, UUIDPrimaryKeyMixin, TimestampMixin):
+class Invitation(Base, UUIDPrimaryKeyMixin, TimestampMixin):
     __tablename__ = "invitations"
 
     workspace_id: Mapped[uuid.UUID]  = mapped_column(UUID(as_uuid=True), ForeignKey("workspaces.id", on_delete="CASCADE"), nullable=False)
