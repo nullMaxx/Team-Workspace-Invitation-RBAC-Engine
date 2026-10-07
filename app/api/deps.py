@@ -10,7 +10,7 @@ from app.core.database import get_db
 from app.core.exceptions import NotAuthenticatedException, ResourceNotFoundException, PermissionDeniedException
 from app.core.security import decode_access_token
 from app.models.user import User
-from app.models.wokspace import WorkspaceRole, WorkspaceMember
+from app.models.workspace import WorkspaceRole, WorkspaceMember
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 

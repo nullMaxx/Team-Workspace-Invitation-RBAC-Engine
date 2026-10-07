@@ -3,7 +3,7 @@ import uuid
 
 from pydantic import BaseModel, Field, ConfigDict
 
-from app.models.wokspace import WorkspaceRole
+from app.models.workspace import WorkspaceRole
 from app.schemas.user import UserResponse
 
 

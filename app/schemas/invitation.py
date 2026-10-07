@@ -4,7 +4,7 @@ import uuid
 from pydantic import BaseModel, EmailStr, Field, ConfigDict
 
 from app.models.invitation import InvitationStatus
-from app.models.wokspace import WorkspaceRole
+from app.models.workspace import WorkspaceRole
 
 
 class InvitationCreate(BaseModel):

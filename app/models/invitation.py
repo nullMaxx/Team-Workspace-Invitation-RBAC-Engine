@@ -6,7 +6,7 @@ from sqlalchemy import ForeignKey, UUID, String, Enum, DateTime
 from sqlalchemy.orm import mapped_column, Mapped, relationship
 
 from app.models.base import UUIDPrimaryKeyMixin, TimestampMixin, Base
-from app.models.wokspace import WorkspaceRole
+from app.models.workspace import WorkspaceRole
 
 
 class InvitationStatus(str, enum.Enum):

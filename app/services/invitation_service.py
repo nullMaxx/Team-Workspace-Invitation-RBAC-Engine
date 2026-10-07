@@ -7,10 +7,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.config import settings
 from app.core.exceptions import ConflictException, ResourceNotFoundException
 from app.core.security import generate_invitation_token, hash_token
-from app.models import wokspace
+from app.models import workspace
 from app.models.invitation import Invitation, InvitationStatus
 from app.models.user import User
-from app.models.wokspace import WorkspaceMember
+from app.models.workspace import WorkspaceMember
 from app.schemas.invitation import InvitationCreate, InvitationCreatedResponse
 
 
